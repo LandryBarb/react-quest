@@ -20,8 +20,8 @@ $fluid-min-size: 1rem;    // 16px baseline at small screens
 $fluid-max-size: 1.125rem; // 18px baseline at large screens
 
 // Modular scale ratios for min and max screens
-$fluid-min-ratio: 1.2;
-$fluid-max-ratio: 1.333;
+$fluid-min-ratio: 1.125; // 1.125 is a common modular scale ratio (Major Third)
+$fluid-max-ratio: 1.25;
 
 // Helpers to compute min and max rem values for each step
 @function fluid-step-min($step) {

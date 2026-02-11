@@ -11,15 +11,27 @@
   cursor: pointer;
 
  &:hover{
-  @include hover-lift();
+    box-shadow: var(--shadow-elevation-high);
+
  }
 }
 
 .card__header {
   margin-block-end: map.get(settings.$space-scale, sm);
+  font-size: map.get(settings.$font-size-scale, 2);
+
 }
 
 .card__body {
   font-size: map.get(settings.$font-size-scale, 0);
-  color: var(--color-text-main);
+  color: var(--color-text-subtle);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: map.get(settings.$font-size-scale, -1);
+  background-color: var(--color-brand-primary);
+  color: var(--color-text-on-brand);
 }
